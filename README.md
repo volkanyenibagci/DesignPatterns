@@ -11,3 +11,6 @@ Bir sınıftan yalnızca bir nesne örneğinin oluşturulmasını sağlayan ve b
 
 Prototype Design Pattern
 Mevcut bir nesnenin kopyasını oluşturarak yeni nesneler yaratmayı sağlar. Bu desen, özellikle nesne oluşturma maliyeti yüksek olduğunda veya nesnenin tüm durumunu dışarıdan almak yerine, mevcut bir nesnenin durumunu kopyalayarak yeni bir nesne oluşturmak daha uygun olduğunda kullanışlıdır.
+
+Adapter Design Pattern
+Bir sınıfın arayüzünü başka bir sınıfın beklediği arayüze dönüştürerek birlikte çalışabilirliğini sağlar. Bu desen, mevcut sistemler arasında uyumsuzluk olduğunda ve birlikte çalışmaları gerektiğinde kullanışlıdır.
