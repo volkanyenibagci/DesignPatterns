@@ -4,7 +4,7 @@ using DesignPatterns.CreationalPatterns.Factory;
 using DesignPatterns.CreationalPatterns.Prototype;
 using DesignPatterns.CreationalPatterns.Singleton;
 
-Console.WriteLine("DESIGN PATTERNS!");
+Console.WriteLine("CREATIONAL PATTERNS!");
 Console.WriteLine("_______________________________________________\r\n");
 
 #region Factory
