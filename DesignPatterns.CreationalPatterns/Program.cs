@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using DesignPatterns.CreationalPatterns.Builder;
 using DesignPatterns.CreationalPatterns.Factory;
+using DesignPatterns.CreationalPatterns.Prototype;
 using DesignPatterns.CreationalPatterns.Singleton;
 
 Console.WriteLine("DESIGN PATTERNS!");
@@ -61,3 +62,28 @@ if (singleton1 == singleton2)
 }
 
 #endregion Singleton
+
+Console.WriteLine("_______________________________________________\r\n");
+
+#region Prototype
+
+//Copying an object “from the outside” isn’t always possible.
+//ConcretePrototype sınıfı IPrototype arayüzünü uygular ve Clone metodunu kullanarak kendisinin bir kopyasını oluşturur. MemberwiseClone metodu, nesnenin yüzeysel bir kopyasını oluşturur. Bu, Prototype Design Pattern'in temel bir uygulamasıdır ve nesneleri klonlamak için bir yol sağlar.
+
+// Orijinal nesneyi oluştur.
+ConcretePrototype original = new ConcretePrototype(1, "original");
+Console.WriteLine("Original: " + original);
+
+// Orijinal nesnenin bir kopyasını oluştur.
+ConcretePrototype clone = original.Clone() as ConcretePrototype;
+Console.WriteLine("Clone: " + clone);
+
+// Klonlanmış nesnenin alanlarını değiştir.
+clone.Field1 = 2;
+clone.Field2 = "modified clone";
+
+// Orijinal ve klonlanmış nesnelerin son durumunu göster.
+Console.WriteLine("Modified Original: " + original);
+Console.WriteLine("Modified Clone: " + clone);
+
+#endregion Prototype
