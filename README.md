@@ -6,6 +6,8 @@ Nesne oluşturma mekanizmasını süper sınıfa bırakarak alt sınıfların ha
 Builder Design Pattern
 Karmaşık nesnelerin adım adım oluşturulmasını sağlar ve aynı oluşturma sürecinin farklı temsillerini üretebilir. Bu desen, nesne oluşturma kodunu ve temsil edilen nesnenin temsilini birbirinden ayırır.
 
- Singleton Design Pattern
+Singleton Design Pattern
 Bir sınıftan yalnızca bir nesne örneğinin oluşturulmasını sağlayan ve bu tek örneğe global bir erişim noktası sunan bir tasarım kalıbıdır. Bu desen, özellikle kaynakların paylaşılması gereken durumlar için kullanışlıdır.
 
+Prototype Design Pattern
+Mevcut bir nesnenin kopyasını oluşturarak yeni nesneler yaratmayı sağlar. Bu desen, özellikle nesne oluşturma maliyeti yüksek olduğunda veya nesnenin tüm durumunu dışarıdan almak yerine, mevcut bir nesnenin durumunu kopyalayarak yeni bir nesne oluşturmak daha uygun olduğunda kullanışlıdır.
