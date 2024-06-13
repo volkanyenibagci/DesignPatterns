@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using DesignPatterns.CreationalPatterns.Builder;
 using DesignPatterns.CreationalPatterns.Factory;
+using DesignPatterns.CreationalPatterns.Singleton;
 
 Console.WriteLine("DESIGN PATTERNS!");
 Console.WriteLine("_______________________________________________\r\n");
@@ -41,3 +42,22 @@ Console.WriteLine(myOfficeComputer.ToString());
 #endregion Builder
 
 Console.WriteLine("_______________________________________________\r\n");
+
+#region Singleton
+
+//Bu örnekte, Singleton sınıfı, kendisinden yalnızca bir örnek oluşturulmasını sağlar. GetInstance metodunu kullanarak Singleton sınıfının bir örneğine erişilir. Eğer bir örnek zaten mevcutsa, bu mevcut örnek döndürülür; aksi takdirde yeni bir örnek oluşturulur ve döndürülür. Bu, Singleton deseninin temel bir uygulamasıdır ve global olarak erişilebilir bir tek nesne örneği sağlar.
+
+// Singleton nesnesini al.
+Singleton singleton1 = Singleton.GetInstance();
+singleton1.DisplayMessage();
+
+// Tekrar Singleton nesnesini al.
+Singleton singleton2 = Singleton.GetInstance();
+
+// İki referansın da aynı nesneye işaret ettiğini doğrula.
+if (singleton1 == singleton2)
+{
+    Console.WriteLine("Singleton1 and Singleton2 refer to the same instance.");
+}
+
+#endregion Singleton
