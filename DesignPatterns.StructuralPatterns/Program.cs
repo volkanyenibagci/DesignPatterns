@@ -15,3 +15,11 @@ Console.WriteLine("But with adapter client can call it's method.");
 Console.WriteLine(target.GetRequest());
 
 #endregion Adapter
+
+Console.WriteLine("_______________________________________________\r\n");
+
+#region Bridge
+
+//Bridge
+
+#endregion Bridge
